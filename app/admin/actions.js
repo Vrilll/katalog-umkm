@@ -53,3 +53,56 @@ export async function logoutAction() {
 export const logout = logoutAction;
 export const keluar = logoutAction;
 
+export async function gantiPasswordAction(prevStateOrFormData, maybeFormData) {
+  const formData = maybeFormData instanceof FormData ? maybeFormData : prevStateOrFormData;
+  const passwordBaru = formData?.get?.("password_baru");
+  const konfirmasiPassword = formData?.get?.("konfirmasi_password");
+
+  if (!passwordBaru || !konfirmasiPassword) {
+    return { error: "Semua kolom password wajib diisi." };
+  }
+
+  const passStr = String(passwordBaru);
+  const konfStr = String(konfirmasiPassword);
+
+  if (passStr.length < 8) {
+    return { error: "Password baru minimal 8 karakter." };
+  }
+
+  if (passStr !== konfStr) {
+    return { error: "Konfirmasi password tidak sama dengan password baru." };
+  }
+
+  try {
+    const supabase = await createAdminClient();
+    const {
+      data: { user },
+      error: authError,
+    } = await supabase.auth.getUser();
+
+    if (authError || !user) {
+      return {
+        error: "Kamu belum login atau sesi telah berakhir. Silakan login kembali.",
+      };
+    }
+
+    const { error } = await supabase.auth.updateUser({
+      password: passStr,
+    });
+
+    if (error) {
+      return {
+        error: error.message || "Gagal mengganti password. Silakan coba lagi.",
+      };
+    }
+
+    return { success: "Password berhasil diganti." };
+  } catch (err) {
+    return {
+      error: err.message || "Terjadi kesalahan saat mengganti password.",
+    };
+  }
+}
+
+export const gantiPassword = gantiPasswordAction;
+export const changePassword = gantiPasswordAction;
