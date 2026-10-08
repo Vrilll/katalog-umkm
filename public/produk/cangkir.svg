@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi cangkir keramik buatan tangan">
+  <defs><clipPath id="badanCangkir"><path d="M195 276h210v104q0 92-105 92q-105 0-105-92z"/></clipPath></defs>
+  <rect width="600" height="600" fill="#e8ece4"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#d7dfd0"/>
+  <ellipse cx="300" cy="502" rx="200" ry="20" fill="#2a3327" opacity="0.16"/>
+  <ellipse cx="300" cy="478" rx="176" ry="26" fill="#efe6d6"/>
+  <ellipse cx="300" cy="474" rx="150" ry="18" fill="#e0d4bd"/>
+  <path d="M398 306q78-4 78 52q0 54-84 58" fill="none" stroke="#f3ead9" stroke-width="24" stroke-linecap="round"/>
+  <path d="M195 276h210v104q0 92-105 92q-105 0-105-92z" fill="#f3ead9"/>
+  <g clip-path="url(#badanCangkir)">
+    <path d="M195 380q52-22 105 0t105 0v100h-210z" fill="#2f7a5b"/>
+    <path d="M195 392q52-22 105 0t105 0" fill="none" stroke="#3f8f6d" stroke-width="5"/>
+    <path d="M195 276h34q-6 110 26 200h-60z" fill="#fff" opacity="0.22"/>
+    <g fill="#9a8468"><circle cx="252" cy="306" r="2.500"/><circle cx="286" cy="330" r="2"/><circle cx="330" cy="310" r="2.500"/><circle cx="362" cy="340" r="2"/><circle cx="238" cy="346" r="2"/><circle cx="310" cy="350" r="2"/><circle cx="378" cy="304" r="2"/><circle cx="270" cy="356" r="2"/><circle cx="344" cy="362" r="2"/></g>
+  </g>
+  <ellipse cx="300" cy="276" rx="105" ry="21" fill="#e6dac4"/>
+  <ellipse cx="300" cy="278" rx="92" ry="15" fill="#4a2f22"/>
+  <path d="M236 278q30-9 64-9" fill="none" stroke="#8a5a3a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M262 232q-18-26 0-50q18-24 0-48" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+  <path d="M304 226q-18-28 0-54q18-26 0-52" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+  <path d="M346 232q-18-26 0-50q18-24 0-48" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+  </g>
+</svg>

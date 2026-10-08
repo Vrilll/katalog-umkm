@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi kopi susu gula aren dalam gelas">
+  <defs>
+    <g id="biji"><ellipse rx="27" ry="19" fill="#6b3f24"/><path d="M-23 0q11-10 23 0t23 0" fill="none" stroke="#3a2012" stroke-width="3.5" stroke-linecap="round"/></g>
+    <linearGradient id="lapis" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b3f24"/><stop offset="0.300" stop-color="#a87245"/>
+      <stop offset="0.560" stop-color="#ecdcc0"/><stop offset="0.820" stop-color="#ecdcc0"/>
+      <stop offset="0.930" stop-color="#b98248"/><stop offset="1" stop-color="#8a5a2e"/>
+    </linearGradient>
+    <clipPath id="gelas"><path d="M208 186h184l-24 286q-2 18-20 18h-96q-18 0-20-18z"/></clipPath>
+  </defs>
+  <rect width="600" height="600" fill="#f6e5cc"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#efd3a9"/>
+  <ellipse cx="300" cy="500" rx="170" ry="20" fill="#4a2f1a" opacity="0.18"/>
+  <rect x="320" y="52" width="17" height="210" rx="8.500" transform="rotate(10 328 157)" fill="#1f6b4f"/>
+  <path d="M208 186h184l-24 286q-2 18-20 18h-96q-18 0-20-18z" fill="url(#lapis)"/>
+  <g clip-path="url(#gelas)">
+    <rect x="232" y="206" width="58" height="58" rx="12" transform="rotate(-14 261 235)" fill="#fff" opacity="0.32"/>
+    <rect x="302" y="214" width="56" height="56" rx="12" transform="rotate(16 330 242)" fill="#fff" opacity="0.28"/>
+    <rect x="262" y="262" width="52" height="52" rx="12" transform="rotate(8 288 288)" fill="#fff" opacity="0.26"/>
+    <path d="M208 186h26l14 304h-30z" fill="#fff" opacity="0.16"/>
+  </g>
+  <path d="M208 186h184l-24 286q-2 18-20 18h-96q-18 0-20-18z" fill="none" stroke="#fff" stroke-opacity="0.75" stroke-width="5"/>
+  <circle cx="300" cy="372" r="46" fill="#fffaf0"/>
+  <g transform="translate(300 372) rotate(25)">
+    <ellipse rx="17" ry="24" fill="#6b3f24"/>
+    <path d="M0-21q-9 11 0 21t0 21" fill="none" stroke="#fffaf0" stroke-width="3.500" stroke-linecap="round"/>
+  </g>
+  <path d="M200 182q0-58 100-58q100 0 100 58z" fill="#fff" opacity="0.5"/>
+  <path d="M200 182q0-58 100-58q100 0 100 58" fill="none" stroke="#fff" stroke-width="4" opacity="0.9"/>
+  <rect x="190" y="174" width="220" height="18" rx="9" fill="#fffaf0"/>
+  <rect x="190" y="184" width="220" height="8" rx="4" fill="#e6d3b3"/>
+  <path d="M84 492v-12q0-36 46-36q46 0 46 36v12z" fill="#8a5426"/>
+  <path d="M96 470q4-18 28-20" fill="none" stroke="#b9814a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 494v-8q0-26 34-26q34 0 34 26v8z" fill="#a0652f"/>
+  <use href="#biji" transform="translate(452 488) rotate(20)"/>
+  <use href="#biji" transform="translate(490 458) rotate(-40) scale(0.85)"/>
+  </g>
+</svg>

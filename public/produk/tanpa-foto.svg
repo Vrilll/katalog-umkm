@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Belum ada foto produk">
+  <rect width="600" height="600" fill="#f6f1e9"/>
+  <rect x="190" y="210" width="220" height="180" rx="24" fill="none" stroke="#cfc4b1" stroke-width="12"/>
+  <circle cx="256" cy="274" r="20" fill="#cfc4b1"/>
+  <path d="M206 372l64-66l44 44l30-30l52 52" fill="none" stroke="#cfc4b1" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>

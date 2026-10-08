@@ -1,7 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Foto contoh: Batik">
-  <rect width="600" height="600" fill="#e3e8f4"/>
-  <circle cx="300" cy="260" r="150" fill="#2f3e66" opacity="0.18"/>
-  <circle cx="300" cy="260" r="96" fill="#2f3e66" opacity="0.85"/>
-  <text x="300" y="490" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="56" font-weight="700" fill="#2f3e66">Batik</text>
-  <text x="300" y="545" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="26" fill="#2f3e66" opacity="0.7">foto contoh, ganti dengan foto produkmu</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi kain batik cap motif parang">
+  <defs>
+    <pattern id="parang" width="52" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+      <rect width="52" height="52" fill="#6b3f22"/>
+      <rect width="52" height="24" fill="#f1e2c6"/>
+      <path d="M0 12q6.500-11 13 0t13 0t13 0t13 0" fill="none" stroke="#6b3f22" stroke-width="5"/>
+      <circle cx="13" cy="38" r="5" fill="#d9a441"/><circle cx="39" cy="38" r="5" fill="#d9a441"/>
+    </pattern>
+    <pattern id="parangBiru" width="52" height="52" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <rect width="52" height="52" fill="#26436b"/>
+      <rect width="52" height="24" fill="#e8eef5"/>
+      <path d="M0 12q6.500-11 13 0t13 0t13 0t13 0" fill="none" stroke="#26436b" stroke-width="5"/>
+      <circle cx="13" cy="38" r="5" fill="#d9a441"/><circle cx="39" cy="38" r="5" fill="#d9a441"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="600" fill="#efe4d2"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#e3d2b6"/>
+  <ellipse cx="300" cy="494" rx="200" ry="20" fill="#3d2513" opacity="0.18"/>
+  <rect x="128" y="396" width="344" height="92" rx="22" fill="#4f2e18"/>
+  <rect x="128" y="384" width="344" height="92" rx="22" fill="url(#parang)"/>
+  <path d="M450 384q22 0 22 22v48q0 22-22 22q-16-46 0-92z" fill="#3d2513" opacity="0.28"/>
+  <rect x="146" y="308" width="308" height="88" rx="22" fill="#18294a"/>
+  <rect x="146" y="296" width="308" height="88" rx="22" fill="url(#parangBiru)"/>
+  <path d="M432 296q22 0 22 22v44q0 22-22 22q-16-44 0-88z" fill="#0f1c33" opacity="0.3"/>
+  <rect x="164" y="220" width="272" height="88" rx="22" fill="#4f2e18"/>
+  <rect x="164" y="208" width="272" height="88" rx="22" fill="url(#parang)"/>
+  <path d="M414 208q22 0 22 22v44q0 22-22 22q-16-44 0-88z" fill="#3d2513" opacity="0.28"/>
+  <rect x="272" y="198" width="56" height="296" fill="#f8efe0"/>
+  <rect x="272" y="198" width="8" height="296" fill="#e6d7bd"/>
+  <circle cx="300" cy="346" r="34" fill="#1f6b4f"/>
+  <circle cx="300" cy="346" r="27" fill="none" stroke="#f8efe0" stroke-width="2" stroke-dasharray="3 4"/>
+  <text x="300" y="354" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="22" font-weight="800" fill="#f8efe0">2 m</text>
+  </g>
 </svg>

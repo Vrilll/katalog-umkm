@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi gula aren semut dalam kemasan">
+  <defs><clipPath id="jendela"><circle cx="300" cy="338" r="60"/></clipPath></defs>
+  <rect width="600" height="600" fill="#f5e7d3"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#ecd3b0"/>
+  <ellipse cx="300" cy="498" rx="190" ry="20" fill="#4a2f1a" opacity="0.18"/>
+  <rect x="200" y="106" width="200" height="40" rx="6" fill="#b38a55"/>
+  <line x1="208" y1="126" x2="392" y2="126" stroke="#8f6c3f" stroke-width="3" stroke-dasharray="2 8"/>
+  <path d="M205 140h190l18 320q2 30-28 30H215q-30 0-28-30z" fill="#c9a06a"/>
+  <path d="M205 140h42l-12 350h-20q-30 0-28-30z" fill="#d8b582"/>
+  <text x="300" y="222" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="28" font-weight="800" fill="#4a2f22">Gula aren</text>
+  <text x="300" y="248" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="16" fill="#6b4a2a">semut alami</text>
+  <circle cx="300" cy="338" r="60" fill="#7a4a22"/>
+  <g clip-path="url(#jendela)">
+    <path d="M230 330q36-26 70-8t70-10v100h-140z" fill="#955f2c"/>
+    <g fill="#b9814a"><circle cx="262" cy="350" r="4"/><circle cx="290" cy="366" r="4.500"/><circle cx="322" cy="348" r="4"/><circle cx="340" cy="372" r="4"/><circle cx="276" cy="384" r="3.500"/><circle cx="310" cy="388" r="4"/><circle cx="250" cy="374" r="3.500"/></g>
+    <g fill="#5e3817"><circle cx="278" cy="352" r="3"/><circle cx="306" cy="370" r="3.500"/><circle cx="334" cy="358" r="3"/><circle cx="262" cy="390" r="3"/><circle cx="326" cy="388" r="3"/></g>
+  </g>
+  <circle cx="300" cy="338" r="60" fill="none" stroke="#f6ecdf" stroke-width="7"/>
+  <text x="300" y="436" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="17" font-weight="700" fill="#4a2f22">250 g</text>
+  <path d="M70 494v-14q0-38 48-38q48 0 48 38v14z" fill="#8a5426"/>
+  <path d="M84 472q4-20 30-22" fill="none" stroke="#b9814a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M132 496v-8q0-28 36-28q36 0 36 28v8z" fill="#a0652f"/>
+  <path d="M492 476l62 24" fill="none" stroke="#b98a55" stroke-width="15" stroke-linecap="round"/>
+  <ellipse cx="454" cy="474" rx="46" ry="24" fill="#b98a55"/>
+  <ellipse cx="454" cy="470" rx="38" ry="18" fill="#a17443"/>
+  <path d="M420 468q34-34 68 0q-34 12-68 0z" fill="#7a4a22"/>
+  <g fill="#b9814a"><circle cx="444" cy="458" r="3"/><circle cx="462" cy="462" r="3"/><circle cx="454" cy="452" r="2.500"/></g>
+  </g>
+</svg>

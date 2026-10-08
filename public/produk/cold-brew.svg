@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi cold brew dalam botol kaca">
+  <defs><clipPath id="botol"><path d="M276 136h48v40q0 30 30 46q21 12 21 40v200q0 28-28 28h-94q-28 0-28-28V262q0-28 21-40q30-16 30-46z"/></clipPath></defs>
+  <rect width="600" height="600" fill="#dcebf1"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#c5dde8"/>
+  <ellipse cx="300" cy="500" rx="170" ry="20" fill="#1c2c36" opacity="0.18"/>
+  <path d="M276 136h48v40q0 30 30 46q21 12 21 40v200q0 28-28 28h-94q-28 0-28-28V262q0-28 21-40q30-16 30-46z" fill="#eef6f9"/>
+  <g clip-path="url(#botol)">
+    <rect x="220" y="170" width="160" height="330" fill="#3b2418"/>
+    <rect x="220" y="170" width="160" height="10" fill="#6b4634"/>
+    <rect x="238" y="250" width="11" height="216" rx="5.500" fill="#fff" opacity="0.22"/>
+    <rect x="356" y="270" width="7" height="150" rx="3.500" fill="#fff" opacity="0.1"/>
+  </g>
+  <path d="M276 136h48v40q0 30 30 46q21 12 21 40v200q0 28-28 28h-94q-28 0-28-28V262q0-28 21-40q30-16 30-46z" fill="none" stroke="#fff" stroke-opacity="0.7" stroke-width="4"/>
+  <rect x="266" y="92" width="68" height="46" rx="9" fill="#2b2b2b"/>
+  <rect x="266" y="124" width="68" height="14" rx="5" fill="#1a1a1a"/>
+  <rect x="244" y="296" width="112" height="132" rx="12" fill="#f6ecdf"/>
+  <text x="300" y="342" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="28" font-weight="800" fill="#2b2b2b">Cold</text>
+  <text x="300" y="372" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="28" font-weight="800" fill="#2b2b2b">brew</text>
+  <line x1="272" y1="386" x2="328" y2="386" stroke="#c9b79c" stroke-width="2"/>
+  <text x="300" y="410" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="14" fill="#5b6a62">500 ml</text>
+  <g transform="rotate(-12 138 458)">
+    <rect x="104" y="424" width="68" height="68" rx="13" fill="#fff" opacity="0.85"/>
+    <rect x="104" y="424" width="68" height="68" rx="13" fill="none" stroke="#a9cbdb" stroke-width="3"/>
+    <path d="M118 476v-34q0-6 6-6h20" fill="none" stroke="#c5dde8" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(16 462 464)">
+    <rect x="434" y="436" width="56" height="56" rx="11" fill="#fff" opacity="0.85"/>
+    <rect x="434" y="436" width="56" height="56" rx="11" fill="none" stroke="#a9cbdb" stroke-width="3"/>
+    <path d="M446 478v-26q0-5 5-5h16" fill="none" stroke="#c5dde8" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="rotate(-8 420 420)">
+    <rect x="400" y="400" width="40" height="40" rx="9" fill="#fff" opacity="0.7"/>
+    <rect x="400" y="400" width="40" height="40" rx="9" fill="none" stroke="#a9cbdb" stroke-width="2.500"/>
+  </g>
+  </g>
+</svg>

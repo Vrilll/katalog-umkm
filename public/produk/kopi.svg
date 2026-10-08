@@ -1,7 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Foto contoh: Kopi">
-  <rect width="600" height="600" fill="#e9d8c8"/>
-  <circle cx="300" cy="260" r="150" fill="#5b3a29" opacity="0.18"/>
-  <circle cx="300" cy="260" r="96" fill="#5b3a29" opacity="0.85"/>
-  <text x="300" y="490" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="56" font-weight="700" fill="#5b3a29">Kopi</text>
-  <text x="300" y="545" text-anchor="middle" font-family="Plus Jakarta Sans, Arial, sans-serif" font-size="26" fill="#5b3a29" opacity="0.7">foto contoh, ganti dengan foto produkmu</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi kopi bubuk robusta dalam kemasan">
+  <defs><g id="biji"><ellipse rx="27" ry="19" fill="#5c3b2b"/><path d="M-23 0q11-10 23 0t23 0" fill="none" stroke="#2a1a12" stroke-width="3.5" stroke-linecap="round"/></g></defs>
+  <rect width="600" height="600" fill="#f3e7d8"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#e9d6bf"/>
+  <ellipse cx="300" cy="498" rx="180" ry="20" fill="#3a241a" opacity="0.18"/>
+  <rect x="200" y="106" width="200" height="40" rx="6" fill="#3a241a"/>
+  <line x1="208" y1="126" x2="392" y2="126" stroke="#6b4634" stroke-width="3" stroke-dasharray="2 8"/>
+  <path d="M205 140h190l18 320q2 30-28 30H215q-30 0-28-30z" fill="#4a2f22"/>
+  <path d="M205 140h42l-12 350h-20q-30 0-28-30z" fill="#5c3b2b"/>
+  <circle cx="352" cy="190" r="13" fill="#3a241a"/>
+  <circle cx="352" cy="190" r="5" fill="#6b4634"/>
+  <rect x="230" y="230" width="140" height="180" rx="14" fill="#f6ecdf"/>
+  <g transform="translate(300 288) rotate(25)">
+    <ellipse rx="24" ry="33" fill="#4a2f22"/>
+    <path d="M0-29q-12 15 0 29t0 29" fill="none" stroke="#f6ecdf" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <text x="300" y="358" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="27" font-weight="700" fill="#4a2f22">Robusta</text>
+  <text x="300" y="388" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="17" fill="#8a6a55">250 g</text>
+  <use href="#biji" transform="translate(132 484) rotate(-28)"/>
+  <use href="#biji" transform="translate(468 488) rotate(22)"/>
+  <use href="#biji" transform="translate(446 452) rotate(-48) scale(0.85)"/>
+  <use href="#biji" transform="translate(96 446) rotate(40) scale(0.8)"/>
+  </g>
 </svg>

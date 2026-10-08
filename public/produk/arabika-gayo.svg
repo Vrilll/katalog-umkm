@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600" role="img" aria-label="Ilustrasi kopi arabika gayo dalam kemasan">
+  <defs><g id="biji"><ellipse rx="27" ry="19" fill="#5c3b2b"/><path d="M-23 0q11-10 23 0t23 0" fill="none" stroke="#2a1a12" stroke-width="3.5" stroke-linecap="round"/></g></defs>
+  <rect width="600" height="600" fill="#e0eee4"/>
+  <g transform="translate(300 318) scale(1.12) translate(-300 -318)">
+  <circle cx="300" cy="310" r="215" fill="#cbe2d2"/>
+  <ellipse cx="300" cy="500" rx="180" ry="20" fill="#143d2d" opacity="0.18"/>
+  <path d="M200 192l14-56h172l14 56z" fill="#185640"/>
+  <rect x="204" y="150" width="192" height="15" rx="7.500" fill="#e8c66a"/>
+  <rect x="204" y="150" width="20" height="15" rx="7.500" fill="#cfa94a"/><rect x="376" y="150" width="20" height="15" rx="7.500" fill="#cfa94a"/>
+  <path d="M200 190h200l8 290q0 12-12 12H204q-12 0-12-12z" fill="#1f6b4f"/>
+  <path d="M200 190h38l-6 302h-28q-12 0-12-12z" fill="#2a7d5e"/>
+  <rect x="228" y="246" width="144" height="188" rx="14" fill="#f6ecdf"/>
+  <circle cx="334" cy="286" r="11" fill="#d9a441"/>
+  <path d="M246 336l32-46l20 28l16-20l40 38z" fill="#1f6b4f"/>
+  <path d="M278 290l9 13l-9 5l-9-5z" fill="#f6ecdf" opacity="0.9"/>
+  <text x="300" y="380" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="31" font-weight="800" fill="#1f6b4f">Gayo</text>
+  <text x="300" y="406" font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="15" fill="#5b6a62">arabika 200 g</text>
+  <path d="M112 440q12-16 30-8" fill="none" stroke="#6b4a2a" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="118" cy="474" r="19" fill="#c8402f"/><circle cx="152" cy="456" r="19" fill="#d94f3b"/><circle cx="152" cy="492" r="17" fill="#b83222"/>
+  <circle cx="112" cy="468" r="5" fill="#fff" opacity="0.35"/><circle cx="146" cy="450" r="5" fill="#fff" opacity="0.35"/>
+  <path d="M70 470q-8-44 30-66q16 42-30 66z" fill="#3f8f5f"/>
+  <path d="M70 470q6-36 28-62" fill="none" stroke="#1f6b4f" stroke-width="3" stroke-linecap="round"/>
+  <use href="#biji" transform="translate(462 486) rotate(24)"/>
+  <use href="#biji" transform="translate(498 454) rotate(-36) scale(0.85)"/>
+  <use href="#biji" transform="translate(440 448) rotate(60) scale(0.75)"/>
+  </g>
+</svg>
