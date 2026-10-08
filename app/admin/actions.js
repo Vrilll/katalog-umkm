@@ -141,6 +141,36 @@ function bacaFormProduk(formData) {
   };
 }
 
+const BUCKET_FOTO = "produk";
+const BATAS_FOTO = 2 * 1024 * 1024; // 2 MB
+const TIPE_FOTO = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" };
+
+// Jika admin memilih file foto, unggah ke Supabase Storage dan isi data.foto_url.
+async function unggahFoto(supabase, formData, data) {
+  const file = formData?.get?.("foto");
+  if (!file || typeof file === "string" || file.size === 0) {
+    return null;
+  }
+  const ekstensi = TIPE_FOTO[file.type];
+  if (!ekstensi) {
+    return "Foto harus berformat JPG, PNG, atau WebP.";
+  }
+  if (file.size > BATAS_FOTO) {
+    return "Ukuran foto maksimal 2 MB.";
+  }
+
+  const namaFile = `${crypto.randomUUID()}.${ekstensi}`;
+  const { error } = await supabase.storage
+    .from(BUCKET_FOTO)
+    .upload(namaFile, file, { contentType: file.type });
+  if (error) {
+    return `Gagal mengunggah foto: ${error.message}`;
+  }
+
+  data.foto_url = supabase.storage.from(BUCKET_FOTO).getPublicUrl(namaFile).data.publicUrl;
+  return null;
+}
+
 export async function tambahProdukAction(prevState, formData) {
   if (!(await ambilAdmin())) {
     return { error: PESAN_BELUM_LOGIN };
@@ -153,6 +183,10 @@ export async function tambahProdukAction(prevState, formData) {
 
   try {
     const supabase = createServerClient();
+    const errorFoto = await unggahFoto(supabase, formData, data);
+    if (errorFoto) {
+      return { error: errorFoto };
+    }
     const { error: errorDb } = await supabase.from("produk").insert(data);
     if (errorDb) {
       return { error: errorDb.message || "Gagal menyimpan produk." };
@@ -182,6 +216,10 @@ export async function ubahProdukAction(prevState, formData) {
 
   try {
     const supabase = createServerClient();
+    const errorFoto = await unggahFoto(supabase, formData, data);
+    if (errorFoto) {
+      return { error: errorFoto };
+    }
     const { error: errorDb } = await supabase.from("produk").update(data).eq("id", id);
     if (errorDb) {
       return { error: errorDb.message || "Gagal menyimpan perubahan." };
@@ -228,28 +266,50 @@ export async function buatDeskripsiAction(nama, kategori) {
     return { error: "GEMINI_API_KEY belum diatur di environment variable." };
   }
 
-  const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
+  // Model utama dulu; jika sibuk (503/429) atau tidak tersedia (404), coba model cadangan.
+  const daftarModel = [
+    process.env.GEMINI_MODEL || "gemini-3.8-flash",
+    "gemini-3.5-flash",
+    "gemini-3.5-flash-lite",
+  ];
   const prompt =
     `Tulis deskripsi produk dalam bahasa Indonesia untuk katalog toko UMKM, 2 sampai 3 kalimat, ` +
-    `ramah dan jujur, tanpa emoji, tanpa tanda kutip, dan jangan mengarang klaim kesehatan.\n` +
-    `Nama produk: ${namaBersih}\nKategori: ${kategoriBersih || "-"}`;
+    `ramah dan jujur, tanpa emoji, tanpa tanda kutip, dan jangan mengarang klaim kesehatan.
+` +
+    `Nama produk: ${namaBersih}
+Kategori: ${kategoriBersih || "-"}`;
 
   try {
-    const respons = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
-        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+    let respons = null;
+    for (const model of daftarModel) {
+      respons = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
+          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+        }
+      );
+      if (respons.ok || ![404, 429, 500, 503].includes(respons.status)) {
+        break;
       }
-    );
+    }
 
     if (!respons.ok) {
-      return { error: `Gemini menolak permintaan (kode ${respons.status}).` };
+      return {
+        error:
+          respons.status === 503 || respons.status === 429
+            ? "Gemini sedang sibuk. Tunggu sebentar lalu klik tombol lagi."
+            : `Gemini menolak permintaan (kode ${respons.status}).`,
+      };
     }
 
     const hasil = await respons.json();
-    const teks = hasil?.candidates?.[0]?.content?.parts?.[0]?.text?.trim();
+    const teks = (hasil?.candidates?.[0]?.content?.parts ?? [])
+      .filter((bagian) => !bagian.thought && bagian.text)
+      .map((bagian) => bagian.text)
+      .join("")
+      .trim();
     if (!teks) {
       return { error: "Gemini tidak mengembalikan teks. Coba lagi." };
     }

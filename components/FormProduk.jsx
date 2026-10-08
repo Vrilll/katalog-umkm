@@ -57,7 +57,13 @@ export default function FormProduk({ produk = {}, labelTombol, aksi }) {
         onChange={(e) => setKategori(e.target.value)}
       />
       <Input
-        label="Link foto"
+        label="Upload foto (JPG, PNG, atau WebP, maks 2 MB)"
+        name="foto"
+        type="file"
+        accept="image/jpeg,image/png,image/webp"
+      />
+      <Input
+        label="Atau pakai link foto"
         name="foto_url"
         placeholder="https://... atau /produk/nama-file.svg"
         defaultValue={produk.foto_url}
